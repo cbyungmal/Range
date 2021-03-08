@@ -19,7 +19,16 @@
  */
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE // 
- var result = range (9, 18); // [9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
-    console.log(result);
-    // YOUR CODE GOES ABOVE HERE //
+ 
+ var arr = [];
+ if (start > end ){
+for(var i = start; i > end -1; i++){
+  arr.push(i);
 }
+ }else if(start < end){
+   for (var num = start; num < end + 1; num++){
+     arr.push(num);
+   }
+ }
+ return arr;
+ // YOUR CODE GOES ABOVER HERE //
