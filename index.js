@@ -21,14 +21,19 @@ function range(start, end) {
     // YOUR CODE GOES BELOW HERE // 
  
  var arr = [];
- if (start > end ){
-for(var i = start; i > end -1; i++){
-  arr.push(i);
+ 
+if (start < end ){
+  for(var i = start; i < end; i++){
+    arr.push(i);
+  }
+  console.log(arr)
 }
- }else if(start < end){
-   for (var num = start; num < end + 1; num++){
+else if(start > end){
+   for (var num = start; num > end; num--){
      arr.push(num);
    }
+ console.log(arr);
  }
- return arr;
- // YOUR CODE GOES ABOVER HERE //
+}
+range(16,8)
+// YOUR CODE GOES ABOVER HERE //
